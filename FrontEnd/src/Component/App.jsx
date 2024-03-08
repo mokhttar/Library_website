@@ -4,14 +4,14 @@ import { useState } from 'react'
 import { ReactDOM } from 'react'
 import NavBare from './NavBare'
 import "./index.css"
+import Home from './Home'
 
 function App() {
   
   return (
     <>
-            <NavBare/>
-           
-  
+            <Home />
+            
     </>
   )
 }

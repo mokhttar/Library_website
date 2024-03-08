@@ -9,6 +9,7 @@ import { Route } from 'react-router-dom'
 // import Routes  to  creat the routes with the elemnts
 import { Routes } from 'react-router-dom'
 import NavBare from './Component/NavBare'
+import Home from './Component/Home'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -18,11 +19,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       path='/'
       element={<App/>}
       />
-      {/* <Route 
-      path='/NavBare'
-      element={<NavBare/>} //Testing Routing
-      />
-     */}
+      <Route 
+      path='/Home'
+      element={<Home/>} 
+      />  
   </Routes>
   </BrowserRouter>
   </React.StrictMode>,
