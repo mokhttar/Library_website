@@ -1,14 +1,17 @@
+// the app is the Main page of the web site
+import React from 'react'
 import { useState } from 'react'
+import { ReactDOM } from 'react'
+import NavBare from './NavBare'
 import "./index.css"
-
 
 function App() {
   
-
   return (
     <>
-      
-  <h1 className='bg-red-500'>hello world</h1>
+            <NavBare/>
+           
+  
     </>
   )
 }
