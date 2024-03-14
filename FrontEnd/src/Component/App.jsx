@@ -1,19 +1,24 @@
-// the app is the Main page of the web site
-import React from 'react'
-import { useState } from 'react'
-import { ReactDOM } from 'react'
-import NavBare from './NavBare'
-import "./index.css"
-import Home from './Home'
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import NavBare from './NavBare';
+import Home from './Home';
+import Login from "../componentslogin/login"
+import TrendBooks from './TrendsBooks';
 
 function App() {
-  
   return (
-    <>
-            <Home />
-            
-    </>
-  )
+    <BrowserRouter>
+      <div>
+     
+      
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/booksName" element={<TrendBooks />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

@@ -9,6 +9,10 @@ export default {
       "./index.html",
       "./src/**/*.{js,ts,jsx,tsx}",
     ],
+    backgroundImage: {
+      'Home-img': "url('/FrontEnd/src/assets/images/shunya-koide-1emWndlDHs0-unsplash.jpg')",
+      'footer-texture': "url('/img/footer-texture.png')",
+    }
   },
   plugins: [],
 }
