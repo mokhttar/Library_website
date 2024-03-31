@@ -5,10 +5,12 @@ import Home from "../ComponentUser/Home";
 
 export default function HomePage()
 {
+
+  
     return(
 
       <>
-        <div  className=" flex">
+        <div  className=" flex bg-gray-900">
           <NavBareAdmin/>
            <div className=" relative w-screen  overflow-hidden   "  style={{ overflow: 'hidden' }}> 
             <Home />

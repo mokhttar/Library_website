@@ -27,7 +27,7 @@ function NavBare() {
   return (
     <>
       <MenuContext.Provider value={{ menu, setmenu }}>
-        <nav className="sticky top-0">
+        <nav className="sticky top-0  " > 
           <div className="px-2 mt-2 flex relative  py-2  shadow-gray-300  ">
             <div className="flex  gap-4">
               <img
@@ -107,25 +107,6 @@ function NavBare() {
               </Link>
             </div>
           </div>
-
-          {/* waiting to desccus about it  with the client*/}
-          {/* <div className="mt-2 border-t-0 border-b-2  rounded-xl pb-1 shadow-xl">
-       <div className="flex   justify-around  ">
-        <div>
-                <img src={Creators} alt="y-b-logo" width={23} height={10} className="ml-4"/>
-                <p className="font-medium hover:animate-pulse font-roboto hover:text-red-700">creators</p>
-        </div>
-        <div className="ml-1  mt-1 ">
-                <img src={Main}alt="Main-logo" width={33}  height={10} className="" />
-                <p className="text-center font-medium hover:animate-pulse font-roboto hover:text-red-700">Main</p>
-        </div>
-        <div>
-            <img src={CategorieLogo} alt="cat-logo" className="ml-3" />
-            <p className="text-center font-medium hover:animate-pulse font-roboto hover:text-red-700">Categorie</p>
-
-            </div>
-       </div>
-  </div> */}
         </nav>
       </MenuContext.Provider>
     </>

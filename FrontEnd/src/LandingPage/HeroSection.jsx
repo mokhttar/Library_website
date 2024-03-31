@@ -9,6 +9,7 @@ function HeroSection() {
   // const {menu,setmenu} = useContext(MenuContext);
   // console.log(setmenu)
   return (
+    <div className="flex justify-center">
     <div className="flex flex-col-reverse md:flex-row px-4 md:px-12 mt-8  z-0 ">
       <div className="flex flex-col justify-center items-center md:items-start w-full sm:w-3/4 md:px-12 pt-2 md:pt-10 mt-10 md:mt-0 ">
         <h1 className="text-red-700 text-3xl font-semibold py-1 text-center md:text-left">
@@ -35,11 +36,13 @@ function HeroSection() {
   <div className="flex   mt-6 md:mt-0    ">
     <Lottie
       animationData={HeroAnimation}
-      loop={true}
+      loop={false}
       className="w-full md:w-auto max-w-sm md:max-w-none    z-[-1]   "
+      
     />
   </div>
 </div>
+    </div>
     </div>
   );
 }

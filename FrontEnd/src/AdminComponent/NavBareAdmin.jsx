@@ -42,12 +42,18 @@ function NavBareAdmin() {
           </div>
           <div className="flex items-center gap-1">
             <img src={BooksLogo} alt="bookslogo" width={16} />
-            <p className="py-2 pb-1">Manage Books</p>
+            <Link to="/Admin/ManageBooks">
+              {" "}
+              <p className="py-2 pb-1">Manage Books</p>
+            </Link>
           </div>
 
           <div className="flex items-center gap-1">
             <img src={TransferLogo} alt="transferLogo" width={20} />
-            <p className="py-2 pb-1">Return Transiction</p>
+            <Link to="/Admin/ReturnTransiction">
+              {" "}
+              <p className="py-2 pb-1">Return Transiction</p>
+            </Link>
           </div>
           <div className="mt-10 mr-10">
             <Lottie animationData={lottieAnimation}></Lottie>
